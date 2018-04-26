@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+#model{
+    border:6px double brown;
+ display: none;
+    z-index:1;
+    position:fixed;
+    /* background-color:violet; */
+    left: 30%;
+    top: 50%;
+}
+
+.pop{
+    background-image: url("bk-image.jpg");
+    display: grid;
+     grid-template-columns: 1fr 500px 500px 1fr ; 
+    grid-template-rows:1fr . . 1fr;
+    grid-gap: 6px;
+     grid-template-areas:
+     ". header header ." 
+     ". title title ."
+     ". navbar content ."
+     ". navbar content ."
+     ". footer footer ."   
+}
+
+
+.header{
+    grid-area:header;
+/* justify-self:center;  */
+background-image:"truffles.jpg";
+/* mask-repeat: no-repeat; */
+
+}
+
+
+.title{
+ grid-area:title;
+align-self:center;
+text-align: center; 
+-webkit-text-fill-color:black;
+font-family: cursive;
+font-size: 40px;
+font-stretch: expanded;
+}
+
+
+.content{
+    grid-area:content;
+    background-color: hotpink;
+}
+
+.navbar{
+    grid-area:navbar;
+    display:grid;
+    justify-self:center;
+  /*grid-template-columns: 20px 20px 20px*/
+  background-color: pink;
+  font-size:25px;
+}
+
+.img{
+    width:50px;
+    height:50px;
+    box-shadow:5px 5px black;
+}
+
+
+.footer{
+    grid-area: footer;
+    
+}
+
+
+
+/* .pop div:nth-child(even){ */
+    /* background-color:aqua; */
+
+
+/* .pop div:nth-child(odd){ */
+    /* background-color: mediumseagreen; */
+
+
+@media screen and (max-width:762px;){
+        display: grid;
+         grid-template-columns: 1fr 500px 500px 1fr ; 
+        grid-template-rows:1fr . . 1fr;
+        grid-gap: 6px;
+         grid-template-areas:
+         ". header header ." 
+         ". title title ."
+         ". navbar content ."
+         ". navbar content ."
+         ". footer footer ."
+}
