@@ -1,11 +1,16 @@
-var model = document.getElementById("model");
-var modelPop = document.getElementsByClassName("modelPop");
-var close = document.getElementsByClassName("close");
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
 
 setTimeout(function(){
-    model.style.display="block";
+    modal.style.display= "block";
 },3000)
 
-    close.onclick=function(){
-    model.style.display="none";
-}
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+//   window.onclick = function(event) {
+//       if(event.target == modal){
+//           modal.style.display = "none";
+//       }
+//   }

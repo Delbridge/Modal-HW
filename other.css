@@ -5,25 +5,36 @@
 }
 
 
-#model{
-    border:6px double brown;
- display: none;
-    z-index:1;
+#myModal{
+    border:40px double yellow;
+ /* display:none; */
     position:fixed;
-    /* background-color:violet; */
+    z-index:1;
+    background-color: black;
     left: 30%;
     top: 50%;
+    font-size: 30px;
+    -webkit-text-fill-color: turquoise;
+    /* overflow:auto; */
 }
+.close{
+border: 2px solid rgb(197, 189, 189);
+background-color: black;
+
+
+
+}
+
 
 .pop{
     background-image: url("bk-image.jpg");
     display: grid;
      grid-template-columns: 1fr 500px 500px 1fr ; 
-    grid-template-rows:1fr . . 1fr;
+    /* grid-template-rows:1fr . . 1fr; */
     grid-gap: 6px;
      grid-template-areas:
-     ". header header ." 
-     ". title title ."
+     ". title header ." 
+     ". title header ."
      ". navbar content ."
      ". navbar content ."
      ". footer footer ."   
@@ -68,8 +79,8 @@ font-stretch: expanded;
     width:50px;
     height:50px;
     box-shadow:5px 5px black;
+   
 }
-
 
 .footer{
     grid-area: footer;
@@ -77,24 +88,27 @@ font-stretch: expanded;
 }
 
 
-
-/* .pop div:nth-child(even){ */
-    /* background-color:aqua; */
-
-
-/* .pop div:nth-child(odd){ */
-    /* background-color: mediumseagreen; */
+/* 
+.pop div:nth-child(even){ 
+    background-color:aqua;
 
 
-@media screen and (max-width:762px;){
+ .pop div:nth-child(odd){
+     background-color: mediumseagreen; */
+/* 
+
+@media screen and (min-width:480px;)(max-width:769px;){
+.grid{
         display: grid;
-         grid-template-columns: 1fr 500px 500px 1fr ; 
-        grid-template-rows:1fr . . 1fr;
-        grid-gap: 6px;
-         grid-template-areas:
-         ". header header ." 
-         ". title title ."
-         ". navbar content ."
-         ". navbar content ."
-         ". footer footer ."
-}
+         grid-template-columns: 1fr 1fr ; 
+       /* / grid-template-rows:1fr . .  1fr; */
+        /* grid-gap: 6px; */
+         /* grid-template-areas:
+         " header header " 
+         " title title "
+         " navbar navbar "
+         " navbar content "
+         " footer footer " */
+
+/* }
+} */
