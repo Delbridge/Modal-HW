@@ -7,7 +7,7 @@
 
 #myModal{
     border:40px double yellow;
- /* display:none; */
+   display:none; 
     position:fixed;
     z-index:1;
     background-color: black;
@@ -95,20 +95,20 @@ font-stretch: expanded;
 
  .pop div:nth-child(odd){
      background-color: mediumseagreen; */
-/* 
 
-@media screen and (min-width:480px;)(max-width:769px;){
+/* 
+@media screen and (max-width: 769px){
 .grid{
-        display: grid;
+         display: grid;
          grid-template-columns: 1fr 1fr ; 
-       /* / grid-template-rows:1fr . .  1fr; */
-        /* grid-gap: 6px; */
-         /* grid-template-areas:
+        /* grid-template-rows:1fr . .  1fr;  */
+            /* grid-gap: 6px; 
+           grid-template-areas:
          " header header " 
          " title title "
          " navbar navbar "
-         " navbar content "
-         " footer footer " */
+         " content content "
+         " footer footer "  */
 
-/* }
-} */
+}
+ } */
