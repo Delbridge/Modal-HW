@@ -1,13 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-
 }
-
 
 #myModal{
     border:40px double yellow;
-   display:none; 
+    display:none; 
     position:fixed;
     z-index:1;
     background-color: black;
@@ -18,46 +16,43 @@
     /* overflow:auto; */
 }
 .close{
-border: 2px solid rgb(197, 189, 189);
-background-color: black;
-
-
-
+    border: 2px solid rgb(197, 189, 189);
+    background-color: black;
 }
 
 
 .pop{
-    background-image: url("bk-image.jpg");
-    display: grid;
+    background-image: url("../Modal-HW/images/bk-image.jpg");
+     display: grid;
      grid-template-columns: 1fr 500px 500px 1fr ; 
     /* grid-template-rows:1fr . . 1fr; */
-    grid-gap: 6px;
+     grid-gap: 6px;
      grid-template-areas:
-     ". title header ." 
-     ". title header ."
-     ". navbar content ."
-     ". navbar content ."
-     ". footer footer ."   
+        ". title header ." 
+        ". title header ."
+        ". navbar content ."
+        ". navbar content ."
+        ". footer footer ."   
 }
 
 
 .header{
     grid-area:header;
 /* justify-self:center;  */
-background-image:"truffles.jpg";
+    background-image:"../Modal-HW/images/truffles.jpg";
 /* mask-repeat: no-repeat; */
 
 }
 
 
 .title{
- grid-area:title;
-align-self:center;
-text-align: center; 
--webkit-text-fill-color:black;
-font-family: cursive;
-font-size: 40px;
-font-stretch: expanded;
+    grid-area:title;
+    align-self:center;
+    text-align: center; 
+    -webkit-text-fill-color:black;
+    font-family: cursive;
+    font-size: 40px;
+    font-stretch: expanded;
 }
 
 
@@ -71,15 +66,14 @@ font-stretch: expanded;
     display:grid;
     justify-self:center;
   /*grid-template-columns: 20px 20px 20px*/
-  background-color: pink;
-  font-size:25px;
+   background-color: pink;
+   font-size:25px;
 }
 
 .img{
     width:50px;
     height:50px;
     box-shadow:5px 5px black;
-   
 }
 
 .footer{
@@ -88,19 +82,20 @@ font-stretch: expanded;
 }
 
 
-/* 
-.pop div:nth-child(even){ 
-    background-color:aqua;
 
+/* .pop div:nth-child(even){ 
+    background-color:aqua;
+}
 
  .pop div:nth-child(odd){
-     background-color: mediumseagreen; */
+     background-color: mediumseagreen; 
 
-/* 
-@media screen and (max-width: 769px){
+ } */
+
+ /* @media screen and (max-width: 769px){
 .grid{
          display: grid;
-         grid-template-columns: 1fr 1fr ; 
+         grid-template-columns: 1fr 1fr ;  */
         /* grid-template-rows:1fr . .  1fr;  */
             /* grid-gap: 6px; 
            grid-template-areas:
@@ -109,6 +104,5 @@ font-stretch: expanded;
          " navbar navbar "
          " content content "
          " footer footer "  */
-
-}
- } */
+    /* }
+} */
