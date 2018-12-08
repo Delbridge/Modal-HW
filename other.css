@@ -22,7 +22,7 @@
 
 
 .pop{
-    background-image: url("../Modal-HW/images/bk-image.jpg");
+    background-image: url("images/bk-image.jpg");
      display: grid;
      grid-template-columns: 1fr 500px 500px 1fr ; 
     /* grid-template-rows:1fr . . 1fr; */
@@ -39,7 +39,7 @@
 .header{
     grid-area:header;
 /* justify-self:center;  */
-    background-image:"../Modal-HW/images/truffles.jpg";
+    background-image:"images/truffles.jpg";
 /* mask-repeat: no-repeat; */
 
 }
